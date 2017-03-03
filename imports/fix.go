@@ -47,13 +47,13 @@ var importToGroup = []func(importPath string) (num int, ok bool){
 	},
 	func(importPath string) (num int, ok bool) {
 		if strings.HasPrefix(importPath, "appengine") {
-			return 2, true
+			return
 		}
 		return
 	},
 	func(importPath string) (num int, ok bool) {
 		if strings.Contains(importPath, ".") {
-			return 1, true
+			return
 		}
 		return
 	},
